@@ -16,9 +16,11 @@ class _HomePageState extends State<HomePage> {
   final form3=TextEditingController();
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
+
     appBar: AppBar(
-    backgroundColor: Colors.lightBlue,
+    backgroundColor: Colors.black38,
     title: Text("GPA CALCULATOR"),
     ),
     body: Container(
@@ -38,9 +40,9 @@ class _HomePageState extends State<HomePage> {
     decoration: new InputDecoration(
     hintText: 'Old Credit hour',
     enabledBorder: OutlineInputBorder(
-    borderSide: BorderSide(color: Colors.lightBlue)),
+    borderSide: BorderSide(color: Colors.orangeAccent)),
     focusedBorder: OutlineInputBorder(
-    borderSide: BorderSide(color: Colors.red)),
+    borderSide: BorderSide(color: Colors.black38)),
     ),
     keyboardType: TextInputType.number,
     onChanged: (val) {
@@ -60,9 +62,9 @@ class _HomePageState extends State<HomePage> {
     decoration: new InputDecoration(
     hintText: 'Old GPA',
     enabledBorder: OutlineInputBorder(
-    borderSide: BorderSide(color: Colors.lightBlue)),
+    borderSide: BorderSide(color: Colors.orangeAccent)),
     focusedBorder: OutlineInputBorder(
-    borderSide: BorderSide(color: Colors.red)),
+    borderSide: BorderSide(color: Colors.black38)),
     ),
     keyboardType: TextInputType.number,
     onChanged: (val) {
@@ -98,10 +100,10 @@ class _HomePageState extends State<HomePage> {
     hintText: 'Credit hour',
     enabledBorder: OutlineInputBorder(
     borderSide: BorderSide(
-    color: Colors.lightBlue)),
+    color: Colors.orangeAccent)),
     focusedBorder: OutlineInputBorder(
     borderSide: BorderSide(
-    color: Colors.red)),
+    color: Colors.black38)),
     ),
     keyboardType: TextInputType.number,
     onChanged: (val) {
@@ -158,9 +160,9 @@ class _HomePageState extends State<HomePage> {
     decoration: new InputDecoration(
     hintText: 'Failed course credit hours ',
     enabledBorder: OutlineInputBorder(
-    borderSide: BorderSide(color: Colors.lightBlue)),
+    borderSide: BorderSide(color: Colors.orangeAccent)),
     focusedBorder: OutlineInputBorder(
-    borderSide: BorderSide(color: Colors.red)),
+    borderSide: BorderSide(color: Colors.black38)),
     ),
     keyboardType: TextInputType.number,
     onChanged: (val) {
@@ -179,7 +181,7 @@ class _HomePageState extends State<HomePage> {
     children: [
     ElevatedButton(
     style: ElevatedButton.styleFrom(
-    primary: Colors.red, // background
+    primary: Colors.black38,
     ),
     onPressed: () {
     setState(() {
@@ -212,7 +214,7 @@ class _HomePageState extends State<HomePage> {
     ElevatedButton(
 
     style: ElevatedButton.styleFrom(
-    primary: Colors.lightBlue,
+    primary: Colors.orange,
     // background
     ),
 
@@ -240,7 +242,7 @@ class _HomePageState extends State<HomePage> {
     builder: (BuildContext context) => AlertDialog(
 
     title:  Text( msg1),
-    content:  Text(msg2,style: TextStyle( color: Colors.red),),
+    content:  Text(msg2,style: TextStyle( color: Colors.black38),),
     actions: <Widget>[
 
 

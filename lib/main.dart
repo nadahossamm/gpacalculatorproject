@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:gpacalculator/Home.dart';
+import 'package:gpacalculator/Screens/Splash.dart';
 
 void main() {
   runApp(MaterialApp(home: MyApp()));
@@ -8,7 +8,6 @@ void main() {
 
 class MyApp extends StatefulWidget {
 
-  // This widget is the root of your application.
   @override
   _MyAppState createState() => _MyAppState();
 }
@@ -19,12 +18,16 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
 
     return MaterialApp(
-      home:HomePage()
+        debugShowCheckedModeBanner: false,
+        home:Splashscreen(),
     );
 
   }
 
 }
+
+
+
 /*
  Scaffold(
       appBar: AppBar(
